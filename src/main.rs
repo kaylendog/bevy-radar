@@ -26,8 +26,8 @@ fn spawn_debug_aircraft(mut events: EventWriter<AircraftEvent>) {
     events.send(AircraftEvent::Spawn {
         flight_number: "12345".to_string(),
         position: Vec2::ZERO,
-        ground_speed: Vec2::ZERO,
-        altitude: 0.0,
+        ground_speed: Vec2::splat(100.0),
+        altitude: 35000.0,
     });
 }
 
